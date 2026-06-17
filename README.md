@@ -83,9 +83,9 @@ job-application-tracker/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/IshanTandukar/job-application-tracker.git
+git clone https://github.com/IshanTandukar/job-tracker.git
 
-cd job-application-tracker
+cd job-tracker
 ```
 
 ## Backend Setup
@@ -222,7 +222,8 @@ VITE_API_URL=
 <img width="1858" height="983" alt="image" src="https://github.com/user-attachments/assets/fc813068-f90c-4b3f-8733-ea9250d85f9d" />
 
 ### Filter and Search
-<img width="1858" height="983" alt="image" src="https://github.com/user-attachments/assets/9a461e7f-e2e7-4b46-ae4c-1fee9b0c098e" />
+<img width="1903" height="806" alt="image" src="https://github.com/user-attachments/assets/1dad732c-5427-4e97-ab30-f1710c3af952" />
+
 <img width="1908" height="739" alt="image" src="https://github.com/user-attachments/assets/83ea4a07-b867-44eb-815a-806db4604cd2" />
 
 
