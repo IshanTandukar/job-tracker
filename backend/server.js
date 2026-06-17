@@ -11,7 +11,12 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: ["https://job-tracker-sand-sigma.vercel.app/"],
+  }),
+);
 app.use(express.json());
 app.use("/applications", applicationRoutes);
 
