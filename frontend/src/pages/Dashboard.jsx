@@ -92,6 +92,7 @@ const Dashboard = () => {
         showModal={showModal}
         setShowModal={setShowModal}
         editingApplication={editingApplication}
+        setEditingApplication={setEditingApplication}
         saveApplication={saveApplication}
       />
     </div>

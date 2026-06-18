@@ -6,6 +6,7 @@ export const ApplicationModal = ({
   setShowModal,
   editingApplication,
   saveApplication,
+  setEditingApplication,
 }) => {
   const initialState = {
     company_name: "",
@@ -31,7 +32,7 @@ export const ApplicationModal = ({
     } else {
       setFormData(initialState);
     }
-  }, [editingApplication]);
+  }, [editingApplication, showModal]);
 
   if (!showModal) return null;
 
@@ -47,10 +48,15 @@ export const ApplicationModal = ({
     saveApplication(formData);
   };
 
+  const closeModal = () => {
+    setShowModal(false);
+    setEditingApplication(null);
+  };
+
   return (
     <div
       className="fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-center items-center"
-      onClick={() => setShowModal(false)}
+      onClick={() => closeModal()}
     >
       <form
         onSubmit={submit}
@@ -63,7 +69,7 @@ export const ApplicationModal = ({
           </h2>
 
           <button
-            onClick={() => setShowModal(false)}
+            onClick={closeModal}
             className="text-xl cursor-pointer absolute top-0.5 right-3 font-bold"
           >
             X
@@ -132,7 +138,7 @@ export const ApplicationModal = ({
         <div className="flex justify-end gap-3 mt-6">
           <button
             type="button"
-            onClick={() => setShowModal(false)}
+            onClick={closeModal}
             className="border px-4 py-2 rounded-lg bg-red-500 text-white"
           >
             Cancel
